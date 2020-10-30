@@ -6,6 +6,7 @@ from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
+from ColorSorter import ColorSorter
 
 
 # This program requires LEGO EV3 MicroPython v2.0 or higher.
@@ -13,8 +14,9 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 
 
 # Create your objects here.
-ev3 = EV3Brick()
-
+cs = ColorSorter()
 
 # Write your program here.
-ev3.speaker.beep()
+while True:
+    cs.wait_for_button_input()
+    cs.grip()
