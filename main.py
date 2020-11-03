@@ -4,16 +4,16 @@ from ColorSorter import ColorSorter
 
 
 cs = ColorSorter()
-cs.grip()
+# cs.grip()
 
 while True:
-    cs.arm_up()
-    cs.grip()
+    # cs.arm_up()
+    # cs.grip()
     cs.wait_for_button_input()
-    color = cs.read_color()
-    cs.run_conveyor()
-    wait(500)
-    cs.arm_down()
+    # color = cs.read_color()
+    # cs.run_conveyor()
+    # wait(500)
+    # cs.arm_down()
     cs.grip()
-    cs.arm_up()
+    # cs.arm_up()
     # cs.sort(color)  # TODO: if color == "none": continue
